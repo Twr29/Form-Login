@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"?>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Login Form</title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			background-color: #FFA5A5;
+		}
+		.container{
+			width: 350px;
+			height: 350px;
+			background-color: #E1E1E1;
+			position: absolute;
+			top: 150px;
+			left: calc((100% - 350px)/2);
+			border-top: 5px solid #FFFFFF;
+			border-bottom: 5px solid #FFFFFF;
+			box-shadow: 4px 4px 0.5px 0.5px #00000080;
+		}
+		.user{
+			position: relative;
+			width: 150px;
+			height: 150px;
+			border-radius: 100%;
+			background-color: #E1E1E1;
+			left: calc((100% - 150px)/2);
+			top: -75px;
+			margin: 0;
+		}
+
+		.dalam{
+			position: relative;
+			width: 120px;
+			height: 120px;
+			border-radius: 100%;
+			background-color: #000;
+			left: calc((100% - 120px)/2);
+			top: calc((100% - 120px)/2);
+			margin: 0;
+		}
+		form.main{
+			width: 80%;
+			position: relative;
+			left: calc((100% - 80%)/2);
+			top: calc((100% - 450px)/2);
+		}
+		input.input{
+			width: 100%;
+			height: 30px;
+			margin-bottom: 20px;
+			text-align: center;
+			border: none;
+			border-bottom: 2px solid #E80000;
+			outline: none;
+		}
+		input.submit{
+			width: 285px;
+			height: 30px;
+			background-color: #65FF80;
+			border: none;
+			outline: none;
+		}
+		span.note{
+			position: relative;
+			top: 5px;
+			left: 25px;
+		}
+		a.ans{
+			text-decoration: none;
+			color: red;
+		}
+		@media screen and (max-width: 400px){
+			.container{
+				width: 300px;
+				height: 300px;
+				left: calc((100% - 300px)/2);
+			}
+			input.submit{
+				width: 240px;
+			}
+
+			span.note{
+				left: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="user">
+		<div class="dalam">
+			<i class="fa fa-user-circle-o" style="font-size: 125px; color: #fff; margin: calc((100% - 125px)/2);"></i>
+		</div>
+	</div>
+	<form class="main">
+		<input type="text" class="input" name="username" placeholder="Username"/>
+		<input type="password" class="input" name="password" placeholder="Password"/>
+		<input type="submit" class="submit" />
+		<span class="note"> You are not have Account? <a href="#" class="ans"> Not Have </a></span>
+	</form>
+</div>
+</body>
+</html>
